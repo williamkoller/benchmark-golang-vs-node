@@ -36,7 +36,6 @@ benchmark-golang-vs-node/
 - Node.js ≥ 22
 - Go ≥ 1.24.2
 
-
 ---
 
 ### 2. Rodar benchmarks individualmente
@@ -49,7 +48,7 @@ time node --import tsx node/cpu-benchmark.ts
 
 # Memory
 time node --import tsx node/memory-benchmark.ts
-````
+```
 
 #### 🟦 Go
 
@@ -87,15 +86,6 @@ Comparação entre tempos (em ms):
 - **Go é mais eficiente em memória**, com menor uso de RAM e CPU.
 - **Node.js entrega bom desempenho em CPU**, ficando muito próximo do Go em tempo real.
 - Ideal para medir custo/benefício entre performance e produtividade.
-
----
-
-## ✅ TODO Futuro
-
-- [ ] Coletar uso de memória (`/usr/bin/time -v`)
-- [ ] Exportar PNG do gráfico automaticamente
-- [ ] Múltiplas execuções com média e desvio padrão
-- [ ] Gráfico interativo com D3.js
 
 ---
 
