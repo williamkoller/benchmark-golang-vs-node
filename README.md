@@ -36,7 +36,6 @@ benchmark-golang-vs-node/
 - Node.js ≥ 22
 - Go ≥ 1.24.2
 
-````
 
 ---
 
