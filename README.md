@@ -23,10 +23,6 @@ benchmark-golang-vs-node/
 ├── node/
 │   ├── cpu-benchmark.ts
 │   └── memory-benchmark.ts
-├── results/
-│   ├── benchmark.csv
-│   └── benchmark.md (opcional)
-├── run-benchmark.ts
 ├── package.json
 └── README.md
 ```
