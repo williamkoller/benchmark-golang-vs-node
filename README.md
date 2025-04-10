@@ -1,4 +1,3 @@
-
 # 🧪 Benchmark: Go vs Node.js
 
 Este projeto compara o desempenho entre **Go** e **Node.js** em dois tipos de benchmarks:
@@ -7,6 +6,7 @@ Este projeto compara o desempenho entre **Go** e **Node.js** em dois tipos de be
 - 🧠 **Memory-bound**: Criação e soma de um array com 10 milhões de itens
 
 Os testes avaliam:
+
 - Tempo de execução interno (`console.log` / `fmt.Printf`)
 - Tempo real de execução com `time`
 - Uso de CPU e memória (via `time`)
@@ -37,12 +37,10 @@ benchmark-golang-vs-node/
 
 ### 1. Requisitos
 
-- Node.js ≥ 18
-- Go ≥ 1.20
-- `tsx` para rodar TS direto:
-```bash
-npm install tsx
-```
+- Node.js ≥ 22
+- Go ≥ 1.24.2
+
+````
 
 ---
 
@@ -56,7 +54,7 @@ time node --import tsx node/cpu-benchmark.ts
 
 # Memory
 time node --import tsx node/memory-benchmark.ts
-```
+````
 
 #### 🟦 Go
 
@@ -70,8 +68,7 @@ time go run go/memory/memory_benchmark.go
 
 ---
 
-
-## 📊 Exemplo de Gráfico 
+## 📊 Exemplo de Gráfico
 
 Comparação entre tempos (em ms):
 
@@ -82,7 +79,7 @@ Comparação entre tempos (em ms):
 ## 📈 Resultados Esperados
 
 | Benchmark | Linguagem | Console (ms) | Tempo Real (ms) |
-|-----------|-----------|--------------|-----------------|
+| --------- | --------- | ------------ | --------------- |
 | CPU       | Node.js   | 120–126      | 250–278         |
 | CPU       | Go        | 168          | 255             |
 | Memory    | Node.js   | 232–246      | 370             |
